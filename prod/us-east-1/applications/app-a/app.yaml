@@ -1,0 +1,5 @@
+app_name: "a"
+
+# App A is legacy and uses an old version of Memcache rather than the newer
+# version most applications use
+cache_engine_version: 2

@@ -1,0 +1,17 @@
+environment_name: prod
+
+# Our module for creating caches prefixes all the variables with cache, to enable
+# us to set generic variables in Terragrunt that are descriptive and don't
+# clash with other resources such as databases
+cache_num_nodes: 2
+cache_engine: redis
+cache_node_type: cache.m5.large
+cache_engine_version: 6
+
+# Similar to the above, our database module takes variables prefixed with
+# "database" so they don't clash with other variables
+database_allocated_storage: 100
+database_engine: mysql
+database_engine_version: 5.7
+database_instance_class: db.m5.large
+database_storage_type: io1
