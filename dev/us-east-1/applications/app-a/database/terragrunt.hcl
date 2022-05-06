@@ -14,6 +14,7 @@ locals {
 
 dependency "eks_cluster" {
   config_path = "../../eks-cluster"
+}
 
 inputs = {
   env_name = local.env_vars['environment_name']
